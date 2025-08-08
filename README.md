@@ -6,11 +6,17 @@ Survey Paper: *Self-Supervised Learning for Specific Emitter Identification: A C
   
 ## Related Work
 **AMAE**: *Few-shot specific emitter identification using asymmetric masked auto-encoder*, IEEE Commun. Lett., 2023. [paper](https://ieeexplore.ieee.org/document/10243409) | [code](https://github.com/YZS666/An-Efficient-RFF-Extraction-Method)
+
 **RFD**: *Few-shot specific emitter identification method using rotation feature decoupling for secure 6G*, ICCT, 2023. [paper](https://ieeexplore.ieee.org/document/10419686) | [code](https://github.com/IcedWatermelonJuice/FS-SEI/tree/main/Rotation-Feature-Decoupling)
+
 **SA2SEI**: *Overcoming data limitations: A few-shot specific emitter identification method using self-supervised learning and adversarial augmentation*, TIFS, 2024. [paper](https://ieeexplore.ieee.org/document/10285131) | [code] (https://github.com/LIUC-000/SA2SEI)
+
 **SimCLR**: *A simple framework for contrastive learning of visual representations*, ICML, 2020. [paper](https://arxiv.org/abs/2002.05709) | [code](https://github.com/sthalles/SimCLR)
+
 **Vicreg**: *Vicreg: Variance-invariance covariance regularization for self-supervised learning*, ICLR, 2022. [paper](https://arxiv.org/abs/2105.04906) | [code](https://github.com/AnnaManasyan/VICReg)
+
 **SimSiam**: *SimSiam: Exploring simple siamese representation learning*, CVPR, 2021. [paper](https://arxiv.org/abs/2011.10566) | [code](https://github.com/facebookresearch/simsiam)
+
 **MoCo**: *Momentum contrast for unsupervised visual representation learning*, CVPR, 2020. [paper](https://ieeexplore.ieee.org/document/9157636) | [code](https://github.com/facebookresearch/moco)
 
 ## SEI-realted dataset
