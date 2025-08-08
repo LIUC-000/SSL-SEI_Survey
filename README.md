@@ -1,8 +1,7 @@
 # Self-Supervised Learning for Specific Emitter Identification
 The rapid proliferation of the Internet of Things (IoT) has intensified the need for strong authentication mechanisms to ensure the integrity and reliability of connected devices. Recent advancements in Deep Learning (DL)-based Specific Emitter Identification (SEI) have demonstrated significant potential in leveraging unique Radio Frequency Fingerprints (RFF) for accurate device identification and authentication. However, the efficacy of these DL-based SEI methods is critically dependent on the availability of extensive labeled datasets, which are often scarce and expensive to obtain in practical applications. To address this limitation, Self-Supervised Learning (SSL) becomes a promising solution, capable of harnessing unlabeled data to learn effective representations. Furthermore, current surveys and reviews on SEI are generally summarized from a high-level perspective, lacking a detailed discussion of SEI methods under label-limited scenarios. This article comprehensively surveys SSL-based SEI, including its motivation, definition, paradigms, related work, challenges, and future direction combined with large models. To help readers quickly engage with this field, this paper also undertakes two specific efforts: collecting and organizing currently available open-source datasets with download links and comparing various SSL-based SEI methods with related codes.
 
-Survey Paper: *Self-Supervised Learning for Specific Emitter Identification: A Comprehensive Survey*, COMST, 2025.  
-  [paper](https://ieeexplore.ieee.org/document/11078425) | [code](https://github.com/LIUC-000/SSL-SEI_Survey)
+**Survey Paper**: *Self-Supervised Learning for Specific Emitter Identification: A Comprehensive Survey*, COMST, 2025. [paper](https://ieeexplore.ieee.org/document/11078425) | [code](https://github.com/LIUC-000/SSL-SEI_Survey)
   
 ## Related Work
 -**AMAE**: *Few-shot specific emitter identification using asymmetric masked auto-encoder*, IEEE Commun. Lett., 2023. [paper](https://ieeexplore.ieee.org/document/10243409) | [code](https://github.com/YZS666/An-Efficient-RFF-Extraction-Method)
@@ -19,5 +18,5 @@ Survey Paper: *Self-Supervised Learning for Specific Emitter Identification: A C
 
 -**MoCo**: *Momentum contrast for unsupervised visual representation learning*, CVPR, 2020. [paper](https://ieeexplore.ieee.org/document/9157636) | [code](https://github.com/facebookresearch/moco)
 
-## SEI-realted dataset
+## SEI-related dataset
 <img width="1188" height="1113" alt="image" src="https://github.com/user-attachments/assets/1b79b9ea-f970-4a3d-aff4-b2fa2533db7d" />
