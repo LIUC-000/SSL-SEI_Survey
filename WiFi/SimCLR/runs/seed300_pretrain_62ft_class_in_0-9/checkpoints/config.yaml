@@ -1,0 +1,36 @@
+network:
+  name: Simclr
+
+  # Specify a folder containing a pre-trained model to fine-tune. If training from scratch, pass None.
+  fine_tune_from: 'Simclr_300-epochs'
+
+  projection_head:
+    mlp_hidden_size: 512
+    projection_size: 128
+
+trainer:
+  batch_size: 128
+  m: 0.996 # momentum update
+  max_epochs: 300
+  num_workers: 0
+  ft: 62
+  class_start: 0
+  class_end: 9
+  temperature: 0.07
+
+optimizer:
+  params:
+    lr: 0.001
+    weight_decay: 0
+
+iteration: 100
+
+finetune:
+  batch_size: 128
+  test_batch_size: 128
+  epochs: 200
+  ft: 62
+  lr: 0.001
+  class_start: 10
+  class_end: 15
+  k_shot: 10

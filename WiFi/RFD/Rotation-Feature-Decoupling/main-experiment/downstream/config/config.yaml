@@ -1,0 +1,24 @@
+trainer:
+  batch_size: 64
+  val_batch_size: 64
+  test_batch_size: 64
+  max_epochs: 100
+  class_start: 10
+  class_end: 15
+  k_shot: 20
+  encoder: "AlexNet"
+  freeze: False
+  pretrain: True
+  pretrained_path: "../pretext/_experiments/Rot_Predict_CVCNN/feature_net_epoch300"
+
+optimizer:
+  params:
+    lr_encoder: 0.001
+    lr_classifier: 0.001
+    weight_decay: 0
+
+iteration: 100
+
+num_class: 6
+
+dataset_root: "../../dataset/WiFi_ft62/"

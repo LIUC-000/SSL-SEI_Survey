@@ -1,0 +1,24 @@
+[2023-12-24 22:56:52] INFO: Algorithm options {'data_train_opt': {'batch_size': 128, 'unsupervised': True, 'random_sized_crop': False, 'dataset_name': 'Lora', 'split': 'train'}, 'data_test_opt': {'batch_size': 128, 'unsupervised': True, 'random_sized_crop': False, 'dataset_name': 'Lora', 'split': 'val'}, 'max_num_epochs': 300, 'networks': {'feature': {'def_file': 'architectures/CVCNNFeature.py', 'pretrained': None, 'opt': {}, 'optim_params': {'optim_type': 'adam', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0, 'nesterov': True, 'LUT_lr': [(600, 0.001)]}}, 'classifier': {'def_file': 'architectures/CVCNNClassifier.py', 'pretrained': None, 'opt': {'num_classes': 4}, 'optim_params': {'optim_type': 'adam', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0, 'nesterov': True, 'LUT_lr': [(600, 0.001)]}}, 'norm': {'def_file': 'architectures/LinearTransformationNorm.py', 'pretrained': None, 'opt': {'low_dim': 128, 'num_feat': 512}, 'optim_params': {'optim_type': 'adam', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0, 'nesterov': True, 'LUT_lr': [(600, 0.001)]}}}, 'criterions': {'loss_cls': {'ctype': 'CrossEntropyLoss', 'opt': {'reduce': False}}, 'loss_mse': {'ctype': 'MSELoss', 'opt': None}, 'nce_average': {'ctype': 'NCEAverage', 'opt': {'def_file': 'architectures/NCEAverage.py', 'net_opt': {'low_dim': 128, 'ndata': 1281167, 'nce_k': 1024, 'nce_t': 0.07, 'nce_m': 0.5}}}, 'nce_criterion': {'ctype': 'NCECriterion', 'opt': {'def_file': 'architectures/NCECriterion.py', 'net_opt': {'ndata': 1281167}}}}, 'lambda_loss': {'cls': 1.0, 'mse': 1.0, 'nce': 1.0}, 'gama': 2, 'algorithm_type': 'DecouplingModel', 'best_metric': 'loss_rot_mse', 'exp_dir': '_experiments/Rot_Predict_CVCNN', 'disp_step': 50}
+[2023-12-24 22:56:52] INFO: Set network feature
+[2023-12-24 22:56:52] INFO: ==> Initiliaze network feature from file architectures/CVCNNFeature.py with opts: {}
+[2023-12-24 22:56:52] INFO: Set network classifier
+[2023-12-24 22:56:52] INFO: ==> Initiliaze network classifier from file architectures/CVCNNClassifier.py with opts: {'num_classes': 4}
+[2023-12-24 22:56:52] INFO: Set network norm
+[2023-12-24 22:56:52] INFO: ==> Initiliaze network norm from file architectures/LinearTransformationNorm.py with opts: {'low_dim': 128, 'num_feat': 512}
+[2023-12-24 22:56:52] INFO: Initialize criterion[loss_cls]: CrossEntropyLoss with options: {'reduce': False}
+[2023-12-24 22:56:52] INFO: Initialize criterion[loss_mse]: MSELoss with options: None
+[2023-12-24 22:56:52] INFO: Initialize criterion[nce_average]: NCEAverage with options: {'def_file': 'architectures/NCEAverage.py', 'net_opt': {'low_dim': 128, 'ndata': 1281167, 'nce_k': 1024, 'nce_t': 0.07, 'nce_m': 0.5}}
+[2023-12-24 22:57:22] INFO: Initialize criterion[nce_criterion]: NCECriterion with options: {'def_file': 'architectures/NCECriterion.py', 'net_opt': {'ndata': 1281167}}
+[2023-12-24 22:57:22] INFO: ==> Initiliaze network NCECriterion from file architectures/NCECriterion.py with opts: {'ndata': 1281167}
+[2023-12-24 22:57:43] INFO: Initialize optimizer: adam with params: {'optim_type': 'adam', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0, 'nesterov': True, 'LUT_lr': [(600, 0.001)]} for network: feature
+[2023-12-24 22:57:43] INFO: Initialize optimizer: adam with params: {'optim_type': 'adam', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0, 'nesterov': True, 'LUT_lr': [(600, 0.001)]} for network: classifier
+[2023-12-24 22:57:43] INFO: Initialize optimizer: adam with params: {'optim_type': 'adam', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0, 'nesterov': True, 'LUT_lr': [(600, 0.001)]} for network: norm
+[2023-12-24 22:57:43] INFO: 
+
+[2023-12-24 22:57:43] INFO: Training epoch [  1 / 300]
+[2023-12-24 22:57:43] INFO: ==> Set to feature optimizer lr = 0.0010000000
+[2023-12-24 22:57:43] INFO: ==> Set to classifier optimizer lr = 0.0010000000
+[2023-12-24 22:57:43] INFO: ==> Set to norm optimizer lr = 0.0010000000
+[2023-12-24 22:57:43] INFO: Training: Rot_Predict_CVCNN
+[2023-12-24 22:57:43] INFO: ==> Dataset: lora_train [8000 samples]
+[2023-12-24 22:57:43] INFO: ==> Iteration steps in one epoch: 63 [batch size 128]
